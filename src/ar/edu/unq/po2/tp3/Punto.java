@@ -6,8 +6,7 @@ public class Punto {
 	private float y;
 	public Punto(float x, float y) {
 		super();
-		this.x = x;
-		this.y = y;
+		this.setXY(x, y);
 	}
 	public float getX() {
 		return x;
@@ -20,6 +19,10 @@ public class Punto {
 	}
 	public void setY(float y) {
 		this.y = y;
+	}
+	public void setXY(float x, float y) {
+		this.setX(x);
+		this.setY(y);
 	}
 	
 }
